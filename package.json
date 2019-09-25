@@ -1,24 +1,19 @@
 {
-  "name": "Bootcamp",
-  "version": "1.0.0",
-  "description": "Our application at this point has an issue one majore issue... \r - Each time the server starts, we reload the data from the same JSON file.",
-  "main": "JSONtoMongo.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lesley43/Bootcamp.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lesley43/Bootcamp/issues"
-  },
-  "homepage": "https://github.com/lesley43/Bootcamp#readme",
+  "name": "Bootcamp#3",
+  "version": "3.0.0",
+  "description": "Routing server-side requests using ExpressJS",
+  "main": "server.js",
+  "author": "Medhir Bhargava & Christina Gardner-McCune",
+  "license": "MIT",
   "dependencies": {
-    "mongoose": "^5.6.13",
-    "should": "^13.2.3"
-  }
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0",
+    "should": "^13.2.3",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {}
 }

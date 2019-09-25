@@ -1,22 +1,26 @@
-//Interested in learning more about testing and the libraries used in this file?
-//Check out - https://mochajs.org/#hooks - Structure of tests
-//Check out - https://mochajs.org/#asynchronous-code - Asyn options
+/*Note about model test
+  This is not actually testing how content gets saved in your database or not. 
+  It is testing that you model works. If you deleted your database this would still work. 
+  If you ran this with the code provided in the assignment it would still pass most tests because 
+  you have empty constructors.
 
+  Note: It may actually run initially but save garbage in your database that will then cause
+  other issues later. So delete your database so 
+  you can start clean once you complete the  listings.server.model.js file 
+
+
+  */
 
 var should = require('should'), 
     mongoose = require('mongoose'), 
-    Listing = require('./ListingSchema'), 
-    config = require('./config');
+    Listing = require('../models/listings.server.model'), 
+    config = require('../config/config');
 
-var listing, id;
+var listing, id, latitude, longitude;
 
 listing =  {
   code: "LBWEST", 
   name: "Library West", 
-  coordinates: {
-    latitude: 29.6508246, 
-    longitude: -82.3417565
-  }, 
   address: "1545 W University Ave, Gainesville, FL 32603, United States"
 }
 
