@@ -1,0 +1,5 @@
+Make sure you start your server before running any tests:
+
+node server.js
+
+Then, open new cmd and run tests
