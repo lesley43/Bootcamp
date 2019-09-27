@@ -90,9 +90,10 @@ exports.delete = function(req, res) {
 
 /* Retreive all the directory listings, sorted alphabetically by listing code */
 exports.list = function(req, res) {
-  var listing = req.listing;
   /* Add your code */
-  Listing.find({}, function (err, docs){
+  //var listing = req.listing;
+
+  Listing.find().exec(function(err, docs) {
     if (err) {
       res.status(400).send(err);
     } else {
