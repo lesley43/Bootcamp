@@ -93,13 +93,26 @@ exports.list = function(req, res) {
   /* Add your code */
   //var listing = req.listing;
 
-  Listing.find().exec(function(err, docs) {
+  Listing.find().sort({code: 1}).exec(function(err, docs) {
     if (err) {
       res.status(400).send(err);
     } else {
       res.json(docs);
     }
   });
+
+
+
+/*
+  Listing.find().sort({code: 1}).all().exec(function(err, docs) {
+    if (err) {
+      res.status(400).send(err);
+    } else {
+      res.json(docs);
+    }
+  });  */
+
+
 };
 
 /*
