@@ -1,0 +1,134 @@
+/* ##### general ##### */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background-color: #FAFBFFs;
+}
+
+main {
+	padding: 0 2rem;
+}
+
+img {
+	height: 3.5rem;
+	margin: 0rem -1rem 0rem 1rem;
+}
+
+/* ##### Search ##### */
+.header-row {
+	text-align: center;
+}
+
+.header {
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+
+#form-search {
+	margin: 1rem;
+	font-size: 1.3rem;
+	height: 4rem;
+}
+
+input[type='text'] {
+	background: #fff;
+	border: none;
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	padding: 0 2rem;
+	width: calc(100% - 2rem);
+	height: 2.65rem;
+}
+
+/* ##### NamesList ##### */
+tr {
+	padding: 0;
+}
+th {
+	position: left;
+	list-style: none;
+	padding: 0.25rem 0.75rem;
+	margin: 2px;
+	border-radius: 3px;
+}
+td:hover {
+	position: left;
+	cursor: pointer;
+	background-color: #E7F0FE;
+}
+
+/* ##### Columns ##### */
+.column1 {
+	width: 48%;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: #F5F8FE;
+}
+
+.column2 {
+	position: absolute;
+	right: 2%;
+	width: 48%;
+	height: 820px;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: #F5F8FE;
+}
+
+/* ##### Rows ##### */
+.row {
+	margin: 1rem;
+}
+
+.row:after {
+	padding: 1 0rem;
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tableWrapper {
+	background-color: #fff;
+	max-height: 800px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+/* ##### card ##### */
+.card-col-2 {
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+.card-listing {
+	background-color: #F58142;
+}
+
+#add-bld {
+	margin-top: 15px;
+}
+
+/* ##### Footer ##### */
+.credit {
+	padding: 1rem 0;
+	color: #b3b3b3;
+}
+.credit a {
+	color: #3498bb;
+}
+button {
+	background: #d7d7d7;
+	color: #3b3b3b;
+	padding: 0.6rem 1rem;
+	font-size: 0.8rem;
+	border: solid 1px #c7c7c7;
+	margin: 1rem 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	outline: none;
+}
+button:hover {
+	background: #ddd;
+}
